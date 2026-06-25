@@ -11,5 +11,4 @@ func main() {
 	generic(1)
 	generic(true)
 
-	fmt.Println(1, 2, 3, 4, "")
 }

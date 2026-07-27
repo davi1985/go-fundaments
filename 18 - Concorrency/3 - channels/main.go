@@ -31,8 +31,7 @@ func main() {
 
 func write(text string, channel chan string) {
 	for i := range 5 {
-		var upperMessage = strings.ToUpper(text) + " - " + strconv.Itoa(i)
-		channel <- upperMessage
+		channel <- strings.ToUpper(text) + " - " + strconv.Itoa(i)
 		time.Sleep(time.Second)
 	}
 
